@@ -1,5 +1,8 @@
 # Algorithm
 Learn Algorithm
 
-HappyWu 的自嗨领域
-算法牛刀小试
+Some code for Introdution to Algorithm
+
+Some code for interview
+
+Happy Wu
