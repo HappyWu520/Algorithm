@@ -2,6 +2,11 @@
  * Created by HappyWu on 16/5/29.
  */
 public class SubArrayAlgorithm {
+    /*
+    * Divide and Conquer
+    * 将问题转化为3个子问题
+    * 最大子序和要么在mid的左边,要么在mid的右边,要么跨越mid
+    * */
     public static int[] findMaxSubArray(int[] nums, int low, int high){
         if (low == high){
             int[] result = {low, high, nums[low]};
@@ -21,6 +26,9 @@ public class SubArrayAlgorithm {
             return cross_result;
     }
 
+    /*
+     * 从中间开始分别往两边找出每一边的最大值,确定边界
+     */
     private static int[] findMaxCrossingSubArray(int[] nums, int low, int mid, int high){
         int left_sum = Integer.MIN_VALUE;
         int sum = 0;
